@@ -1,4 +1,5 @@
 import React from 'react';
+import { navigate } from '@reach/router';
 import GifDetails from '../components/gifdetails';
 
 export default function GifResult({ gif }) {
@@ -9,7 +10,7 @@ export default function GifResult({ gif }) {
     // }
 
     if (item) {
-        return <GifDetails url={item.images.downsized.url} title={item.title} rating={item.rating}></GifDetails>
+        navigate(`/gifdetails/${gif.id}`, {state: gif})
     }
 
     return (

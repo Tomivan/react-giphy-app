@@ -1,11 +1,11 @@
 import React from 'react';
-import SearchGif from './components/searchgif';
+import Pages from './pages';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <SearchGif />
+      <Pages />
     </div>
   );
 }
